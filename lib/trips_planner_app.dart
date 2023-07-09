@@ -7,11 +7,11 @@ import 'package:amplify_hashnode/common/utils/colors.dart' as constants;
 
 class TripsPlannerApp extends StatelessWidget {
   const TripsPlannerApp({
-    required this.isAmplifyConfigured,
+    required this.isAmplifySuccessfullyConfigured,
     Key? key,
   }) : super(key: key);
 
-  final bool isAmplifyConfigured;
+  final bool isAmplifySuccessfullyConfigured;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class TripsPlannerApp extends StatelessWidget {
           GoRoute(
             path: '/',
             name: AppRoute.home.name,
-            builder: (context, state) => isAmplifyConfigured
+            builder: (context, state) => isAmplifySuccessfullyConfigured
                 ? const TripsListPage()
                 : const Scaffold(
                     body: Center(
