@@ -10,6 +10,11 @@
       "StackName": "amplify-amplifyhashnode-dev-202638",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:202087447854:stack/amplify-amplifyhashnode-dev-202638/26e25fc0-1b44-11ee-bfab-0216f8fa05ba",
       "AmplifyAppId": "d1fxhaolz6ii3b"
+    },
+    "categories": {
+      "auth": {
+        "amplifyhashnodeccbce23e": {}
+      }
     }
   }
 }
