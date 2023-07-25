@@ -1,3 +1,4 @@
+import 'package:amplify_hashnode/features/trip/ui/trip_page/trip_page.dart';
 import 'package:amplify_hashnode/features/trip/ui/trips_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -18,18 +19,12 @@ class TripsPlannerApp extends StatelessWidget {
     final router = GoRouter(
       routes: [
         GoRoute(
-          path: '/',
-          name: AppRoute.home.name,
-          builder: (context, state) => isAmplifySuccessfullyConfigured
-              ? const TripsListPage()
-              : const Scaffold(
-                  body: Center(
-                    child: Text(
-                      'Tried to reconfigure Amplify; '
-                      'this can occur when your app restarts on Android.',
-                    ),
-                  ),
-                ),
+          path: '/trip/:id',
+          name: AppRoute.trip.name,
+          builder: (context, state) {
+            final tripId = state.params['id']!;
+            return TripPage(tripId: tripId);
+          },
         ),
       ],
       errorBuilder: (context, state) => Scaffold(
