@@ -23,9 +23,9 @@ import 'ModelProvider.dart';
 import 'package:amplify_core/amplify_core.dart' as amplify_core;
 
 
-/** This is an auto generated class representing the Todo type in your schema. */
-class Todo extends amplify_core.Model {
-  static const classType = const _TodoModelType();
+/** This is an auto generated class representing the Trip type in your schema. */
+class Trip extends amplify_core.Model {
+  static const classType = const _TripModelType();
   final String id;
   final String? _tripName;
   final String? _destination;
@@ -43,8 +43,8 @@ class Todo extends amplify_core.Model {
   @override
   String getId() => id;
   
-  TodoModelIdentifier get modelIdentifier {
-      return TodoModelIdentifier(
+  TripModelIdentifier get modelIdentifier {
+      return TripModelIdentifier(
         id: id
       );
   }
@@ -117,10 +117,10 @@ class Todo extends amplify_core.Model {
     return _updatedAt;
   }
   
-  const Todo._internal({required this.id, required tripName, required destination, required startDate, required endDate, tripImageUrl, tripImageKey, createdAt, updatedAt}): _tripName = tripName, _destination = destination, _startDate = startDate, _endDate = endDate, _tripImageUrl = tripImageUrl, _tripImageKey = tripImageKey, _createdAt = createdAt, _updatedAt = updatedAt;
+  const Trip._internal({required this.id, required tripName, required destination, required startDate, required endDate, tripImageUrl, tripImageKey, createdAt, updatedAt}): _tripName = tripName, _destination = destination, _startDate = startDate, _endDate = endDate, _tripImageUrl = tripImageUrl, _tripImageKey = tripImageKey, _createdAt = createdAt, _updatedAt = updatedAt;
   
-  factory Todo({String? id, required String tripName, required String destination, required amplify_core.TemporalDate startDate, required amplify_core.TemporalDate endDate, String? tripImageUrl, String? tripImageKey}) {
-    return Todo._internal(
+  factory Trip({String? id, required String tripName, required String destination, required amplify_core.TemporalDate startDate, required amplify_core.TemporalDate endDate, String? tripImageUrl, String? tripImageKey}) {
+    return Trip._internal(
       id: id == null ? amplify_core.UUID.getUUID() : id,
       tripName: tripName,
       destination: destination,
@@ -137,7 +137,7 @@ class Todo extends amplify_core.Model {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is Todo &&
+    return other is Trip &&
       id == other.id &&
       _tripName == other._tripName &&
       _destination == other._destination &&
@@ -154,7 +154,7 @@ class Todo extends amplify_core.Model {
   String toString() {
     var buffer = new StringBuffer();
     
-    buffer.write("Todo {");
+    buffer.write("Trip {");
     buffer.write("id=" + "$id" + ", ");
     buffer.write("tripName=" + "$_tripName" + ", ");
     buffer.write("destination=" + "$_destination" + ", ");
@@ -169,8 +169,8 @@ class Todo extends amplify_core.Model {
     return buffer.toString();
   }
   
-  Todo copyWith({String? tripName, String? destination, amplify_core.TemporalDate? startDate, amplify_core.TemporalDate? endDate, String? tripImageUrl, String? tripImageKey}) {
-    return Todo._internal(
+  Trip copyWith({String? tripName, String? destination, amplify_core.TemporalDate? startDate, amplify_core.TemporalDate? endDate, String? tripImageUrl, String? tripImageKey}) {
+    return Trip._internal(
       id: id,
       tripName: tripName ?? this.tripName,
       destination: destination ?? this.destination,
@@ -180,7 +180,7 @@ class Todo extends amplify_core.Model {
       tripImageKey: tripImageKey ?? this.tripImageKey);
   }
   
-  Todo copyWithModelFieldValues({
+  Trip copyWithModelFieldValues({
     ModelFieldValue<String>? tripName,
     ModelFieldValue<String>? destination,
     ModelFieldValue<amplify_core.TemporalDate>? startDate,
@@ -188,7 +188,7 @@ class Todo extends amplify_core.Model {
     ModelFieldValue<String?>? tripImageUrl,
     ModelFieldValue<String?>? tripImageKey
   }) {
-    return Todo._internal(
+    return Trip._internal(
       id: id,
       tripName: tripName == null ? this.tripName : tripName.value,
       destination: destination == null ? this.destination : destination.value,
@@ -199,7 +199,7 @@ class Todo extends amplify_core.Model {
     );
   }
   
-  Todo.fromJson(Map<String, dynamic> json)  
+  Trip.fromJson(Map<String, dynamic> json)  
     : id = json['id'],
       _tripName = json['tripName'],
       _destination = json['destination'],
@@ -226,7 +226,7 @@ class Todo extends amplify_core.Model {
     'updatedAt': _updatedAt
   };
 
-  static final amplify_core.QueryModelIdentifier<TodoModelIdentifier> MODEL_IDENTIFIER = amplify_core.QueryModelIdentifier<TodoModelIdentifier>();
+  static final amplify_core.QueryModelIdentifier<TripModelIdentifier> MODEL_IDENTIFIER = amplify_core.QueryModelIdentifier<TripModelIdentifier>();
   static final ID = amplify_core.QueryField(fieldName: "id");
   static final TRIPNAME = amplify_core.QueryField(fieldName: "tripName");
   static final DESTINATION = amplify_core.QueryField(fieldName: "destination");
@@ -235,43 +235,43 @@ class Todo extends amplify_core.Model {
   static final TRIPIMAGEURL = amplify_core.QueryField(fieldName: "tripImageUrl");
   static final TRIPIMAGEKEY = amplify_core.QueryField(fieldName: "tripImageKey");
   static var schema = amplify_core.Model.defineSchema(define: (amplify_core.ModelSchemaDefinition modelSchemaDefinition) {
-    modelSchemaDefinition.name = "Todo";
-    modelSchemaDefinition.pluralName = "Todos";
+    modelSchemaDefinition.name = "Trip";
+    modelSchemaDefinition.pluralName = "Trips";
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.id());
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.field(
-      key: Todo.TRIPNAME,
+      key: Trip.TRIPNAME,
       isRequired: true,
       ofType: amplify_core.ModelFieldType(amplify_core.ModelFieldTypeEnum.string)
     ));
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.field(
-      key: Todo.DESTINATION,
+      key: Trip.DESTINATION,
       isRequired: true,
       ofType: amplify_core.ModelFieldType(amplify_core.ModelFieldTypeEnum.string)
     ));
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.field(
-      key: Todo.STARTDATE,
+      key: Trip.STARTDATE,
       isRequired: true,
       ofType: amplify_core.ModelFieldType(amplify_core.ModelFieldTypeEnum.date)
     ));
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.field(
-      key: Todo.ENDDATE,
+      key: Trip.ENDDATE,
       isRequired: true,
       ofType: amplify_core.ModelFieldType(amplify_core.ModelFieldTypeEnum.date)
     ));
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.field(
-      key: Todo.TRIPIMAGEURL,
+      key: Trip.TRIPIMAGEURL,
       isRequired: false,
       ofType: amplify_core.ModelFieldType(amplify_core.ModelFieldTypeEnum.string)
     ));
     
     modelSchemaDefinition.addField(amplify_core.ModelFieldDefinition.field(
-      key: Todo.TRIPIMAGEKEY,
+      key: Trip.TRIPIMAGEKEY,
       isRequired: false,
       ofType: amplify_core.ModelFieldType(amplify_core.ModelFieldTypeEnum.string)
     ));
@@ -292,29 +292,29 @@ class Todo extends amplify_core.Model {
   });
 }
 
-class _TodoModelType extends amplify_core.ModelType<Todo> {
-  const _TodoModelType();
+class _TripModelType extends amplify_core.ModelType<Trip> {
+  const _TripModelType();
   
   @override
-  Todo fromJson(Map<String, dynamic> jsonData) {
-    return Todo.fromJson(jsonData);
+  Trip fromJson(Map<String, dynamic> jsonData) {
+    return Trip.fromJson(jsonData);
   }
   
   @override
   String modelName() {
-    return 'Todo';
+    return 'Trip';
   }
 }
 
 /**
  * This is an auto generated class representing the model identifier
- * of [Todo] in your schema.
+ * of [Trip] in your schema.
  */
-class TodoModelIdentifier implements amplify_core.ModelIdentifier<Todo> {
+class TripModelIdentifier implements amplify_core.ModelIdentifier<Trip> {
   final String id;
 
-  /** Create an instance of TodoModelIdentifier using [id] the primary key. */
-  const TodoModelIdentifier({
+  /** Create an instance of TripModelIdentifier using [id] the primary key. */
+  const TripModelIdentifier({
     required this.id});
   
   @override
@@ -332,7 +332,7 @@ class TodoModelIdentifier implements amplify_core.ModelIdentifier<Todo> {
   String serializeAsString() => serializeAsMap().values.join('#');
   
   @override
-  String toString() => 'TodoModelIdentifier(id: $id)';
+  String toString() => 'TripModelIdentifier(id: $id)';
   
   @override
   bool operator ==(Object other) {
@@ -340,7 +340,7 @@ class TodoModelIdentifier implements amplify_core.ModelIdentifier<Todo> {
       return true;
     }
     
-    return other is TodoModelIdentifier &&
+    return other is TripModelIdentifier &&
       id == other.id;
   }
   
