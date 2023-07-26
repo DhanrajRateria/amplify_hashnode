@@ -42,7 +42,7 @@ class TripsPlannerApp extends StatelessWidget {
             return TripPage(tripId: tripId);
           },
         ),
-                GoRoute(
+        GoRoute(
           path: '/edittrip/:id',
           name: AppRoute.edittrip.name,
           builder: (context, state) {
@@ -67,7 +67,7 @@ class TripsPlannerApp extends StatelessWidget {
         builder: Authenticator.builder(),
         theme: ThemeData(
           primarySwatch: constants.primaryColor,
-          backgroundColor: const Color(0xff82CFEA),
+          colorScheme: ColorScheme.fromSeed(seedColor: Color(0xff82CFEA)),
         ),
       ),
     );

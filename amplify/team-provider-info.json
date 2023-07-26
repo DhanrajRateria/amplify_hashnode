@@ -1,22 +1,25 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyhashnode-dev-202638-authRole",
-      "UnauthRoleArn": "arn:aws:iam::202087447854:role/amplify-amplifyhashnode-dev-202638-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::202087447854:role/amplify-amplifyhashnode-dev-202638-authRole",
+      "AuthRoleName": "amplify-amplifyhashnode-dev-181127-authRole",
+      "UnauthRoleArn": "arn:aws:iam::202087447854:role/amplify-amplifyhashnode-dev-181127-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::202087447854:role/amplify-amplifyhashnode-dev-181127-authRole",
       "Region": "ap-southeast-1",
-      "DeploymentBucketName": "amplify-amplifyhashnode-dev-202638-deployment",
-      "UnauthRoleName": "amplify-amplifyhashnode-dev-202638-unauthRole",
-      "StackName": "amplify-amplifyhashnode-dev-202638",
-      "StackId": "arn:aws:cloudformation:ap-southeast-1:202087447854:stack/amplify-amplifyhashnode-dev-202638/26e25fc0-1b44-11ee-bfab-0216f8fa05ba",
-      "AmplifyAppId": "d1fxhaolz6ii3b"
+      "DeploymentBucketName": "amplify-amplifyhashnode-dev-181127-deployment",
+      "UnauthRoleName": "amplify-amplifyhashnode-dev-181127-unauthRole",
+      "StackName": "amplify-amplifyhashnode-dev-181127",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:202087447854:stack/amplify-amplifyhashnode-dev-181127/be528970-2bb1-11ee-baae-02e1070421d0",
+      "AmplifyAppId": "d1cvqhm7ckauob"
     },
     "categories": {
       "auth": {
-        "amplifyhashnodeccbce23e": {}
+        "amplifyhashnode473fbd49": {}
       },
       "api": {
         "amplifyhashnode": {}
+      },
+      "storage": {
+        "s3279f1d68": {}
       }
     }
   }

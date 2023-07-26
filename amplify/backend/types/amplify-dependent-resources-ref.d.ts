@@ -7,10 +7,9 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "auth": {
-    "amplifyhashnodeccbce23e": {
+    "amplifyhashnode473fbd49": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
-      "CreatedSNSRole": "string",
       "IdentityPoolId": "string",
       "IdentityPoolName": "string",
       "UserPoolArn": "string",
@@ -19,7 +18,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "storage": {
-    "tripsplannerstorage": {
+    "s3279f1d68": {
       "BucketName": "string",
       "Region": "string"
     }

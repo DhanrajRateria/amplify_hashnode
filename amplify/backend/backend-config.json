@@ -1,10 +1,25 @@
 {
   "api": {
     "amplifyhashnode": {
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "amplifyhashnode473fbd49"
+        }
+      ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authamplifyhashnode473fbd49"
+              }
+            }
+          ],
           "defaultAuthentication": {
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7
@@ -18,7 +33,7 @@
     }
   },
   "auth": {
-    "amplifyhashnodeccbce23e": {
+    "amplifyhashnode473fbd49": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -35,7 +50,7 @@
         ],
         "socialProviders": [],
         "usernameAttributes": [
-          "PHONE_NUMBER"
+          "EMAIL"
         ],
         "verificationMechanisms": [
           "EMAIL"
@@ -46,7 +61,7 @@
     }
   },
   "storage": {
-    "tripsplannerstorage": {
+    "s3279f1d68": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

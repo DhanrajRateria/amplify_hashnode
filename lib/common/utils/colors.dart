@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 const Map<int, Color> primarySwatch = {
-  50: Color.fromRGBO(255, 207, 68, .1),
-  100: Color.fromRGBO(255, 207, 68, .2),
-  200: Color.fromRGBO(255, 207, 68, .3),
-  300: Color.fromRGBO(255, 207, 68, .4),
-  400: Color.fromRGBO(255, 207, 68, .5),
-  500: Color.fromRGBO(255, 207, 68, .6),
-  600: Color.fromRGBO(255, 207, 68, .7),
-  700: Color.fromRGBO(255, 207, 68, .8),
-  800: Color.fromRGBO(255, 207, 68, .9),
-  900: Color.fromRGBO(255, 207, 68, 1),
+  50: Colors.black,
+  100: Color(0xff331D2C),
+  300: Color(0xff3F2E3E),
+  500: Color(0xffA78295),
+  700: Color(0xffEFE1D1),
+  
 };
-const MaterialColor primaryColor = MaterialColor(0xFFFFCF44, primarySwatch);
-const int primaryColorDark = 0xFFFD9725;
+const MaterialColor primaryColor = MaterialColor(0xFFA78295, primarySwatch);
+const int primaryColorDark = 0xFF331D2C;

@@ -1,7 +1,7 @@
 {
-  "resourceName": "tripsplannerstorage",
-  "policyUUID": "6347daa5",
-  "bucketName": "amplifyhashnode",
+  "resourceName": "s3279f1d68",
+  "policyUUID": "279f1d68",
+  "bucketName": "amplifyhashnode36b9a7cdd6944ec58d39bf0c49b19658",
   "storageAccess": "authAndGuest",
   "guestAccess": [
     "READ"

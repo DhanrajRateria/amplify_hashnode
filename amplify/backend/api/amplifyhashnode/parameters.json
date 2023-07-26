@@ -1,5 +1,11 @@
 {
   "AppSyncApiName": "amplifyhashnode",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authamplifyhashnode473fbd49",
+      "Outputs.UserPoolId"
+    ]
+  }
 }
